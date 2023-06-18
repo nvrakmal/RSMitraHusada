@@ -83,6 +83,29 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Lokasi.class));
     }
 
+    public void Alamat(View view) {
+        openGoogleMaps();
+    }
+
+    public void openGoogleMaps() {
+        double latitude = -7.8649;
+        double longitude = 111.2635;
+        String label = "RS Mitra Husada Pringsewu";
+        String uri = "geo:" + latitude + "," + longitude + "?q=" + latitude + "," + longitude + "(" + label + ")";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        intent.setPackage("com.google.android.apps.maps");
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            // Handle jika Google Maps tidak terpasang di perangkat
+            // Misalnya, buka browser dengan koordinat yang sama
+            String mapUrl = "https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude;
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mapUrl));
+            startActivity(browserIntent);
+        }
+    }
+
     public void Email(View view) {
         String email = "cs@mitrahusadapringsewu.com";
         Intent intent = new Intent(Intent.ACTION_SENDTO);
@@ -94,6 +117,24 @@ public class MainActivity extends AppCompatActivity {
         String phoneNumber = "+6282281666655";
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
+        startActivity(intent);
+    }
+
+    public void Facebook(View view) {
+        redirectToWebsite("https://web.facebook.com/rsmitra.husada.7?_rdc=1&_rdr");
+    }
+
+    public void Instagram(View view) {
+        redirectToWebsite("https://www.instagram.com/rs.mitrahusada/");
+    }
+
+    public void Youtube(View view) {
+        redirectToWebsite("https://www.youtube.com/channel/UCrjPtLtJGYYLx3EO7wd7g-g?view_as=subscriber");
+    }
+
+    private void redirectToWebsite(String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
         startActivity(intent);
     }
 }
