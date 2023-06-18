@@ -35,4 +35,181 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="top|center"
+                android:src="@drawable/banner3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Tentang Kami"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/paragraf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="RS Mitra Husada Pringsewu adalah rumah sakit umum yang dimiliki oleh PT. Mitra Husada Bersama. PT. Mitra Husada Bersama berdiri tanggal 14 Nopember 2006, dengan Akta Notaris M Reza Berawi, SH Nomor 32, disyahkan dengan SK Menteri Hukum dan Hak Asasi Manusia Nomor W6-00001 HT 01.01-Tahun 2007. Latar belakang berdirinya RS Mitra Husada Pringsewu adalah adanya keprihatinan dari beberapa Dokter dan Paramedis di Pringsewu dan sekitarnya akan belum terdapatnya rumah sakit di Pringsewu yang cukup representatif, padahal animo masyarakat Pringsewu cukup tinggi, di samping dari data statistik dan studi kelayakan menunjukkan bahwa penduduk Pringsewu dan sekitarnya (Tanggamus, Pesawaran dan Lampung Tengah) masih membutuhkan rumah sakit."
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/paragraf2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="RS Mitra Husada Pringsewu adalah rumah sakit umum yang dimiliki oleh PT. Mitra Husada Bersama. PT. Mitra Husada Bersama berdiri tanggal 14 Nopember 2006, dengan Akta Notaris M Reza Berawi, SH Nomor 32, disyahkan dengan SK Menteri Hukum dan Hak Asasi Manusia Nomor W6-00001 HT 01.01-Tahun 2007. Latar belakang berdirinya RS Mitra Husada Pringsewu adalah adanya keprihatinan dari beberapa Dokter dan Paramedis di Pringsewu dan sekitarnya akan belum terdapatnya rumah sakit di Pringsewu yang cukup representatif, padahal animo masyarakat Pringsewu cukup tinggi, di samping dari data statistik dan studi kelayakan menunjukkan bahwa penduduk Pringsewu dan sekitarnya (Tanggamus, Pesawaran dan Lampung Tengah) masih membutuhkan rumah sakit."
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/paragraf3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Pada awal operasional pelayanan meliputi rawat jalan dan rawat inap dengan 57 tempat tidur, pada tanggal 15 Januari 2009 mendapat izin dari Dinas Kesehatan Tanggamus untuk menyelenggarakan rawat inap dengan 100 tempat tidur. Pada tahun 2015 RS Mitra Husada Pringsewu menyelenggarakan rawat inap dengan kapasitas tempat tidur menjadi 156 tempat tidur. Kemudian di tahun 2018, dengan adanya pembangunan gedung rawat inap baru, kapasitas tempat tidur meningkat menjadi 195 tempat tidur."
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:text="VISI"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="20dp"
+                android:text="Menjadi Rumah Sakit Pilihan Masyarakat yang Bermutu dan Unggul dalam Bidang Pelayanan Kesehatan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:text="MISI"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Menyelenggarakan pelayanan kesehatan yang terjangkau bagi seluruh masyarakat\n\u2022 Mengembangkan pelayanan kesehatan yang komprehensif dengan mengacu pada perkembangan teknologi dan keselamatan pasien\n\u2022 Mengembangan sumber daya manusia yang kompeten, produktif dan melayani dengan sepenuh hati"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:text="MOTO"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="20dp"
+                android:text="Kesehatan Anda Kepedulian Kami" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:text="Tata Nilai RS.Mitra Husada"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Profesional"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. Kompeten\n2. Terampil\n3. Disiplin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Integritas"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. Jujur\n2. Bertanggung Jawab\n3. Loyalitas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Sinergi"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. Kerjasama\n2. Inovatif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Service Excelence"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. Peduli\n2. Responsif\n3. Perbaikan terus-menerus" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

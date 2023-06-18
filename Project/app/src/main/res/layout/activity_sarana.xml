@@ -1,393 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".mainmenu.Sarana">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:background="@drawable/banner"
-        android:weightSum="15"
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:background="#00AEF0"
+        android:elevation="8dp"
+        android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_weight="2"
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_height="50dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-            <TextView
-                android:id="@+id/textGrid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Fasilitas Dan Sarana"
-                android:textAlignment="center"
-                android:textSize="20sp" />
-
-        </RelativeLayout>
-
-        <GridLayout
-            android:id="@+id/mainGrid"
-            android:layout_width="match_parent"
-            android:layout_height="766dp"
-            android:layout_weight="8"
-            android:alignmentMode="alignMargins"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
-            android:padding="14dp"
-            android:rowCount="5"
-            app:srcCompat="@drawable/banner2">
-
-            <!-- Row 1 -->
-
-            <!-- Column 1 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/ruangoperasi" />
-
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Ruang Operasi"
-                        app:backgroundTint="#00AEF0" />
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="109dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/unitgawat" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="UGD"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Row 2 -->
-
-            <!-- Column 1 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ruangbersalin" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Ruang Bersalin"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/unitlaborat" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Unit Laborat"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Row 3 -->
-
-            <!-- Column 1 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/unitfarmasi" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Unit Farmasi"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/rawatinap" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Rawat Inap"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Row 4 -->
-
-            <!-- Column 1 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/rawatjalan" />
-
-                    <Button
-                        android:id="@+id/button7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Rawat Jalan"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/laparoskopi" />
-
-                    <Button
-                        android:id="@+id/button8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Laparoscp"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Row 5 -->
-
-            <!-- Column 1 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/usg" />
-
-                    <Button
-                        android:id="@+id/button9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="USG"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Column 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ekg" />
-
-                    <Button
-                        android:id="@+id/button10"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="EKG CTG"
-                        app:backgroundTint="#00AEF0" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
-
+            android:gravity="left|center"
+            android:text="Sarana Dan Fasilitas"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
     </LinearLayout>
 
-</ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="top|center"
+                android:src="@drawable/saranadanfasilitas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Sarana Dan Fasilitas Penunjang"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/paragraf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Rumah Sakit Mitra Husada Pringsewu adalah sebuah rumah sakit yang terletak di Pringsewu, Indonesia. Sarana dan fasilitas penunjang yang biasanya tersedia di rumah sakit ini dapat mencakup hal-hal berikut:"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. 4 Ruang Operasi\n2. UGD 24 Jam\n3. Ruang Bersalin VK\n4. Ruang ICU dan HCU\n5. Unit Laboratorium\n6. Unit Radiologi\n7. Unit Farmasi\n8. Rawat Inap dan Intensif\n9. Rawat Jalan\n10. Laparoscopi\n11. USG 4 Dimensi\n12. EKG dan CTG\n13. Audiometri\n14. Spirometri\n15. Konsultasi Gizi\n16. Pemusalaran Jenazah\n17. Masjid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Pada Laboratorium terdapat :"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Hematologi\n\u2022 Hemostatis\n\u2022 Urinalisa\n\u2022 Cairan Tubuh\n\u2022 Tinja\n\u2022 Kimia Klinik\n\u2022 Mikrobiologi\n\u2022 Parasitologi Serologi-Imunologi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Pada Unit Radiologi terdapat :"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Xray Konfensional\n\u2022 CT Scan 12 Slice\n\u2022 USG"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Pada Rawat Inap dan Intensif terdapat :"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Kelas 3 Ruang Kenanga dan Melati\n\u2022 Kelas 2 Ruang Mawar\n\u2022 Kelas 1 Ruang Aster\n\u2022 VIP Ruang Wijaya dan Cempaka\n\u2022 SVIP Ruang Anggrek, Cempaka, Bougenvil\n\u2022 VVIP Ruang Bougenvil dan Anggrek\n\u2022 VIP Perawatan Stroke ruang Flamboyan\n\u2022 Isolasi Ruang Kenanga, Mawar, Aster\n\u2022Neonatal Intensif Care Unit (NICU)\n\u2022 HCU/ICU"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Pada Rawat Jalan terdapat :"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Penyakit Dalam\n\u2022 Kebidanan dan Kandungan\n\u2022 Penyakit Mata\n\u2022 Penyakit Saraf\n\u2022 Penyakit THT\n\u2022 VVIP Penyakit Kulit dan Kelamin\n\u2022 Poliklinik Tumbuh Kembang Anak\n\u2022 Bedah Umum\n\u2022 Poliklinik Urologi\n\u2022 Poliklinik Gigi\n\u2022 Hemodialisa\n\u2022 Fisioterapi\n\u2022 Medical Check Up (MCU)"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
