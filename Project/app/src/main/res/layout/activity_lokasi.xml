@@ -44,7 +44,10 @@
         android:layout_height="wrap_content"
         android:text="RS Mitra Husada Pringsewu, memiliki lokasi yang strategis pada kota Pringsewu. Beralamat lengkap di Jl. Jendral Ahmad Yani No. 14, Kec. Pringsewu, Kab. Pringsewu, Lampung."
         android:textSize="14sp"
-        android:padding="8dp" />
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
 
     <Button
         android:id="@+id/btn_google_maps"

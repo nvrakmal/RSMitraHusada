@@ -30,6 +30,12 @@
             android:name=".mainmenu.Dokter"
             android:exported="false" />
         <activity
+            android:name=".mainmenu.Pendaftaran"
+            android:exported="false" />
+        <activity
+            android:name=".mainmenu.TentangKami"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

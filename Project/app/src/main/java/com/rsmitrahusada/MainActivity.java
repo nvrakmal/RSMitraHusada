@@ -14,7 +14,9 @@ import com.rsmitrahusada.adapter.SliderAdapter;
 import com.rsmitrahusada.mainmenu.Dokter;
 import com.rsmitrahusada.mainmenu.Layanan;
 import com.rsmitrahusada.mainmenu.Lokasi;
+import com.rsmitrahusada.mainmenu.Pendaftaran;
 import com.rsmitrahusada.mainmenu.Sarana;
+import com.rsmitrahusada.mainmenu.TentangKami;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -88,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
     public void Lokasi(View view) {
         startActivity(new Intent(MainActivity.this, Lokasi.class));
     }
+
+    public void Pendaftaran(View view) { startActivity(new Intent(MainActivity.this, Pendaftaran.class)); }
+
+    public void TentangKami(View view) { startActivity(new Intent(MainActivity.this, TentangKami.class)); }
+
 
     public void Alamat(View view) {
         openGoogleMaps();

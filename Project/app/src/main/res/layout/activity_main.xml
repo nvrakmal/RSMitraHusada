@@ -66,61 +66,77 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-                <LinearLayout
-                    android:id="@+id/layout_layanan"
-                    android:layout_width="180dp"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_layanan"
+                    android:layout_width="160dp"
                     android:layout_height="140dp"
-                    android:background="#04A1DC"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:gravity="center_horizontal"
+                    app:cardBackgroundColor="#04A1DC"
+                    app:cardCornerRadius="10dp"
                     android:onClick="Layanan"
-                    android:orientation="vertical">
+                    android:layout_margin="5dp">
 
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ambulance" />
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Layanan Darurat 24 Jam"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/layout_dokter"
-                    android:layout_width="180dp"
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ambulance" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Layanan Darurat 24 Jam"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_dokter"
+                    android:layout_width="160dp"
                     android:layout_height="140dp"
-                    android:background="#00AEF0"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:gravity="center_horizontal"
+                    app:cardBackgroundColor="#00AEF0"
+                    app:cardCornerRadius="10dp"
                     android:onClick="Dokter"
-                    android:orientation="vertical">
+                    android:layout_margin="5dp">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/doctor" />
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Dokter Berpengalaman"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/doctor" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Dokter Berpengalaman"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
@@ -128,67 +144,158 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:paddingTop="0dp"
-                android:paddingBottom="10dp">
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-                <LinearLayout
-                    android:id="@+id/layout_sarana"
-                    android:layout_width="180dp"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_sarana"
+                    android:layout_width="160dp"
                     android:layout_height="140dp"
-                    android:background="#00AEF0"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:gravity="center_horizontal"
+                    app:cardBackgroundColor="#00AEF0"
+                    app:cardCornerRadius="10dp"
                     android:onClick="Sarana"
-                    android:orientation="vertical">
+                    android:layout_margin="5dp">
 
-                    <ImageView
-                        android:layout_width="55dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/building" />
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Sarana dan Fasilitas"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/layout_lokasi"
-                    android:layout_width="180dp"
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/building" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Sarana dan Fasilitas"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_lokasi"
+                    android:layout_width="160dp"
                     android:layout_height="140dp"
-                    android:background="#04A1DC"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:gravity="center_horizontal"
+                    app:cardBackgroundColor="#04A1DC"
+                    app:cardCornerRadius="10dp"
                     android:onClick="Lokasi"
-                    android:orientation="vertical">
+                    android:layout_margin="5dp">
 
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/location" />
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Lokasi Strategis"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Lokasi Strategis"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigasi_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pendaftaran"
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#04A1DC"
+                    app:cardCornerRadius="10dp"
+                    android:onClick="Pendaftaran"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_pendaftaran" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Pendaftaran Online"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_tentangkami"
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#00AEF0"
+                    app:cardCornerRadius="10dp"
+                    android:onClick="TentangKami"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/doctor" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Tentang Kami"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
                 android:paddingTop="25dp"
-                android:paddingBottom="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#161616"
@@ -353,6 +460,12 @@
                         android:textSize="14sp" />
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#00AEF0">
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
