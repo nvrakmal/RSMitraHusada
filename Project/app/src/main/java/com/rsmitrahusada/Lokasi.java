@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import org.osmdroid.config.Configuration;
@@ -19,12 +20,11 @@ import org.osmdroid.views.overlay.OverlayItem;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class Lokasi extends AppCompatActivity {
 
     private MapView mapView;
-    private Button googleMapsButton;
+    private ImageView backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +52,16 @@ public class Lokasi extends AppCompatActivity {
         mapView.getOverlays().add(overlay);
         mapView.getController().setCenter(lokasi);
 
+        // Inisialisasi tombol kembali (back button) dan tambahkan listener
+        backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Panggil fungsi onBackPressed() saat tombol kembali ditekan
+            }
+        });
 
-    // Periksa koneksi internet
+        // Periksa koneksi internet
         if (Utils.isInternetConnected(this)) {
             // Jika terhubung ke internet, tampilkan peta
             mapView.setVisibility(View.VISIBLE);
@@ -61,15 +69,6 @@ public class Lokasi extends AppCompatActivity {
             // Jika tidak terhubung ke internet, tampilkan pesan kesalahan
             Toast.makeText(this, "Tidak ada koneksi internet", Toast.LENGTH_SHORT).show();
         }
-
-        // Inisialisasi button dan tambahkan listener
-        googleMapsButton = findViewById(R.id.btn_google_maps);
-        googleMapsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openGoogleMaps();
-            }
-        });
     }
 
     private void openGoogleMaps() {
@@ -93,5 +92,11 @@ public class Lokasi extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mapView.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish(); // Kembali ke aktivitas sebelumnya
     }
 }
