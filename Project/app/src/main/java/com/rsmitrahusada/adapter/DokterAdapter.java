@@ -1,4 +1,4 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.rsmitrahusada.model.DokterModel;
+import com.rsmitrahusada.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainAdapter extends FirebaseRecyclerAdapter<MainModel, MainAdapter.myViewHolder> {
+public class DokterAdapter extends FirebaseRecyclerAdapter<DokterModel, DokterAdapter.myViewHolder> {
 
 
     /**
@@ -23,12 +25,12 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel, MainAdapter.
      *
      * @param options
      */
-    public MainAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
+    public DokterAdapter(@NonNull FirebaseRecyclerOptions<DokterModel> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull MainModel model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull DokterModel model) {
         holder.nama.setText(model.getNama());
         holder.spesialis.setText(model.getSpesialis());
         holder.jadwal.setText(model.getJadwal());

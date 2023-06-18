@@ -1,4 +1,4 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.mainmenu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,9 +7,11 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.rsmitrahusada.R;
+import com.rsmitrahusada.utils.Utils;
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;

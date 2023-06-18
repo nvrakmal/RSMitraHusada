@@ -224,8 +224,7 @@
                         android:paddingLeft="20dp"
                         android:text="Facebook"
                         android:textColor="@color/white"
-                        android:textSize="14sp"
- />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout

@@ -1,4 +1,4 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.mainmenu;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,12 +7,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rsmitrahusada.adapter.DokterAdapter;
+import com.rsmitrahusada.model.DokterModel;
+import com.rsmitrahusada.R;
 
 public class Dokter extends AppCompatActivity {
 
 
     RecyclerView recyclerView;
-    MainAdapter mainAdapter;
+    DokterAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +25,12 @@ public class Dokter extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<MainModel> options =
-                new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("JadwalDokter"), MainModel.class)
+        FirebaseRecyclerOptions<DokterModel> options =
+                new FirebaseRecyclerOptions.Builder<DokterModel>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("JadwalDokter"), DokterModel.class)
                         .build();
 
-        mainAdapter = new MainAdapter(options);
+        mainAdapter = new DokterAdapter(options);
         recyclerView.setAdapter(mainAdapter);
     }
 

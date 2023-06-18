@@ -18,16 +18,16 @@
         android:theme="@style/Theme.RSMitraHusada"
         tools:targetApi="31">
         <activity
-            android:name=".Sarana"
+            android:name=".mainmenu.Sarana"
             android:exported="false" />
         <activity
-            android:name=".Lokasi"
+            android:name=".mainmenu.Lokasi"
             android:exported="false" />
         <activity
-            android:name=".Layanan"
+            android:name=".mainmenu.Layanan"
             android:exported="false" />
         <activity
-            android:name=".Dokter"
+            android:name=".mainmenu.Dokter"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

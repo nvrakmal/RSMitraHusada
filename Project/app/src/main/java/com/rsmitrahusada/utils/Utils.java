@@ -1,4 +1,4 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

@@ -5,13 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Layanan">
+    tools:context=".mainmenu.Layanan">
 
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00AEF0"
+        android:elevation="8dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Ini Activity Layanan" />
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            app:tint="@android:color/white" />
 
+        <TextView
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="left|center"
+            android:text="Layanan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="top|center"
+                android:src="@drawable/layanan24jam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Layanan Darurat 24 Jam"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/paragraf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="RS MITRA HUSADA PRINGSEWU, memiliki layanan darurat yang selalu siap sedia melayani pasien dengan sepenuh hati selama 24 Jam.Pelayanan Unit Gawat Darurat (UGD) adalah salah satu bagian di rumah sakit yang menyediakan penanganan awal bagi pasien yang menderita sakit dan cedera, yang dapat mengancam kelangsungan hidupnya. Setiap rumah sakit pasti memiliki layanan UGD yang melayani pelayanan medis selama 24 jam. RS Mitra Husada Pringsewu siap melayani pasien dengan layanan 24 jam dengan dokter-dokter umum yang melayaninya.Layanan 24 Jam RS Mitra Husada yaitu:"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="1. Unit Gawat Darurat\n2. Laboratorium\n3. Radiologi\n4. Farmasi\n5. Ambulance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Pada unit Gawat Darurat terdapat :"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="\u2022 Ruang Triage\n\u2022 Ruang Resusitasi/Tindakan\n\u2022 Ruang Observasi\n\u2022 Bedside Monitor\n\u2022 Elektrokardiografi (EKG)\n\u2022 Ruang Tunggu" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

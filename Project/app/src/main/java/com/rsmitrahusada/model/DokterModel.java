@@ -1,14 +1,14 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.model;
 
-public class MainModel {
+public class DokterModel {
 
     String nama, spesialis, jadwal, surl;
 
-    MainModel()
+    DokterModel()
     {
 
     }
-    public MainModel(String nama, String spesialis, String jadwal, String surl) {
+    public DokterModel(String nama, String spesialis, String jadwal, String surl) {
         this.nama = nama;
         this.spesialis = spesialis;
         this.jadwal = jadwal;

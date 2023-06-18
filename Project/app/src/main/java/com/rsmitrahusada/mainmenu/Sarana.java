@@ -1,4 +1,4 @@
-package com.rsmitrahusada;
+package com.rsmitrahusada.mainmenu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.rsmitrahusada.R;
 
 public class Sarana extends AppCompatActivity {
     Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10;

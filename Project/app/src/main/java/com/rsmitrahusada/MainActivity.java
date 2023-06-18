@@ -10,6 +10,12 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.rsmitrahusada.adapter.SliderAdapter;
+import com.rsmitrahusada.mainmenu.Dokter;
+import com.rsmitrahusada.mainmenu.Layanan;
+import com.rsmitrahusada.mainmenu.Lokasi;
+import com.rsmitrahusada.mainmenu.Sarana;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
