@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -40,12 +41,11 @@ public class Lokasi extends AppCompatActivity {
         mapView = findViewById(R.id.map_view);
         mapView.setTileSource(TileSourceFactory.DEFAULT_TILE_SOURCE);
         mapView.setMultiTouchControls(true);
-        mapView.getController().setZoom(20.0);
+        mapView.getController().setZoom(19.0);
 
         // Tambahkan marker untuk lokasi
         GeoPoint lokasi = new GeoPoint(-5.35862, 104.99164); // Koordinat latitude dan longitude
         Drawable icon = getResources().getDrawable(R.drawable.ic_location); // Menggunakan ikon kustom (misalnya ic_location.png di folder res/drawable)
-        icon.setBounds(0, 0, icon.getIntrinsicWidth() * 2, icon.getIntrinsicHeight() * 2); // Memperbesar ukuran ikon
         OverlayItem overlayItem = new OverlayItem("RS Mitra Husada", "RS MITRA HUSADA PRINGSEWU", lokasi);
         overlayItem.setMarker(icon);
 
@@ -71,17 +71,34 @@ public class Lokasi extends AppCompatActivity {
             // Jika tidak terhubung ke internet, tampilkan pesan kesalahan
             Toast.makeText(this, "Tidak ada koneksi internet", Toast.LENGTH_SHORT).show();
         }
+
+        // Inisialisasi tombol Lihat di Google Maps dan tambahkan listener
+        Button btnGoogleMaps = findViewById(R.id.btn_google_maps);
+        btnGoogleMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGoogleMaps();
+            }
+        });
     }
 
     private void openGoogleMaps() {
-        // Ganti dengan koordinat latitude dan longitude RS Mitra Husada Pringsewu
-        double latitude = -7.8649;
-        double longitude = 111.2635;
+        double latitude = -5.35852;
+        double longitude = 104.99075;
         String label = "RS Mitra Husada Pringsewu";
         String uri = "geo:" + latitude + "," + longitude + "?q=" + latitude + "," + longitude + "(" + label + ")";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         intent.setPackage("com.google.android.apps.maps");
-        startActivity(intent);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            // Handle jika Google Maps tidak terpasang di perangkat
+            // Misalnya, buka browser dengan koordinat yang sama
+            String mapUrl = "https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude;
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mapUrl));
+            startActivity(browserIntent);
+        }
     }
 
     @Override

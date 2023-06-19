@@ -48,7 +48,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/linearLayout3"
+                android:id="@+id/Banner"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:background="#1f91f3"
@@ -60,6 +60,35 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/indicator_Layout"
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/indicatorDot1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_dot_inactive" />
+
+                    <ImageView
+                        android:id="@+id/indicatorDot2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_dot_inactive" />
+
+                    <ImageView
+                        android:id="@+id/indicatorDot3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_dot_inactive" />
+                </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/navigasi_1"
@@ -198,7 +227,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="35dp"
+                            android:layout_width="40dp"
                             android:layout_height="80dp"
                             android:src="@drawable/ic_location_main" />
 
@@ -242,7 +271,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:layout_height="80dp"
                             android:src="@drawable/ic_pendaftaran" />
 
@@ -278,7 +307,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/ic_tentangkami" />
+                            android:src="@drawable/ic_tentang"/>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -308,7 +337,7 @@
 
                     <TextView
                         android:paddingTop="15dp"
-                        android:paddingBottom="15dp"
+                        android:paddingBottom="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
@@ -325,11 +354,17 @@
                     android:layout_height="30dp"
                     android:gravity="left|center"
                     android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="left|center"
+                        android:src="@drawable/ic_facebook"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="10dp"
                         android:text="Facebook"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
@@ -342,11 +377,17 @@
                     android:layout_height="30dp"
                     android:gravity="left|center"
                     android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="left|center"
+                        android:src="@drawable/ic_instagram"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="10dp"
                         android:text="Instagram"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
@@ -359,11 +400,17 @@
                     android:layout_height="30dp"
                     android:gravity="left|center"
                     android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="left|center"
+                        android:src="@drawable/ic_youtube"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="10dp"
                         android:text="YouTube"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
@@ -378,7 +425,7 @@
 
                     <TextView
                         android:paddingTop="15dp"
-                        android:paddingBottom="15dp"
+                        android:paddingBottom="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
@@ -386,7 +433,7 @@
                         android:text="Kontak Kami"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                 <LinearLayout
                     android:onClick="Email"
@@ -400,7 +447,7 @@
                         android:layout_height="30dp"
                         android:paddingLeft="20dp"
                         android:gravity="left|center"
-                        android:src="@drawable/ic_email" />
+                        android:src="@drawable/ic_email"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -425,7 +472,7 @@
                         android:layout_height="30dp"
                         android:paddingLeft="20dp"
                         android:gravity="left|center"
-                        android:src="@drawable/ic_call" />
+                        android:src="@drawable/ic_phone" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -447,10 +494,10 @@
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:paddingLeft="20dp"
                         android:gravity="left|top"
-                        android:src="@drawable/ic_map" />
+                        android:src="@drawable/ic_location_f" />
 
                     <TextView
                         android:layout_width="wrap_content"

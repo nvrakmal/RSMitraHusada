@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
                 android:gravity="top|center"
-                android:src="@drawable/layanan24jam" />
+                android:src="@drawable/banner_layanan" />
 
             <TextView
                 android:layout_width="wrap_content"
