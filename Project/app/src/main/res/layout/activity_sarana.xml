@@ -49,15 +49,16 @@
             android:paddingBottom="20dp">
 
             <ImageView
+                android:paddingTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="430dp"
                 android:gravity="top|center"
                 android:src="@drawable/saranadanfasilitas" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
+                android:paddingTop="10dp"
                 android:text="Sarana Dan Fasilitas Penunjang"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -90,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="\u2022 Hematologi\n\u2022 Hemostatis\n\u2022 Urinalisa\n\u2022 Cairan Tubuh\n\u2022 Tinja\n\u2022 Kimia Klinik\n\u2022 Mikrobiologi\n\u2022 Parasitologi Serologi-Imunologi" />
+                android:text="\u2022 Pemeriksaan Hematologi\n\u2022 pemeriksaan Hemostatis\n\u2022 Urinalis\n\u2022 Pemeriksaan Cairan Tubuh\n\u2022 Pemeriksaan Feses\n\u2022 Kimia Klinik\n\u2022 Mikrobiologi\n\u2022 Parasitologi Serologi-Imunologi" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,7 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="\u2022 Kelas 3 Ruang Kenanga dan Melati\n\u2022 Kelas 2 Ruang Mawar\n\u2022 Kelas 1 Ruang Aster\n\u2022 VIP Ruang Wijaya dan Cempaka\n\u2022 SVIP Ruang Anggrek, Cempaka, Bougenvil\n\u2022 VVIP Ruang Bougenvil dan Anggrek\n\u2022 VIP Perawatan Stroke ruang Flamboyan\n\u2022 Isolasi Ruang Kenanga, Mawar, Aster\n\u2022Neonatal Intensif Care Unit (NICU)\n\u2022 HCU/ICU"/>
+                android:text="\u2022 Kelas 3 Ruang Kenanga dan Melati\n\u2022 Kelas 2 Ruang Mawar\n\u2022 Kelas 1 Ruang Aster\n\u2022 VIP Ruang Wijaya dan Cempaka\n\u2022 SVIP Ruang Anggrek, Cempaka, Bougenvil\n\u2022 VVIP Ruang Bougenvil dan Anggrek\n\u2022 VIP Perawatan Stroke ruang Flamboyan\n\u2022 Isolasi Ruang Kenanga, Mawar, Aster\n\u2022 Neonatal Intensif Care Unit (NICU)\n\u2022 HCU/ICU"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -132,7 +133,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="\u2022 Penyakit Dalam\n\u2022 Kebidanan dan Kandungan\n\u2022 Penyakit Mata\n\u2022 Penyakit Saraf\n\u2022 Penyakit THT\n\u2022 VVIP Penyakit Kulit dan Kelamin\n\u2022 Poliklinik Tumbuh Kembang Anak\n\u2022 Bedah Umum\n\u2022 Poliklinik Urologi\n\u2022 Poliklinik Gigi\n\u2022 Hemodialisa\n\u2022 Fisioterapi\n\u2022 Medical Check Up (MCU)"/>
+                android:text="\u2022 Penyakit Dalam\n\u2022 Kebidanan dan Kandungan\n\u2022 Penyakit Mata\n\u2022 Penyakit Saraf\n\u2022 Penyakit THT\n\u2022 VVIP Penyakit Kulit dan Kelamin\n\u2022 Poliklinik Tumbuh Kembang Anak\n\u2022 Bedah Umum\n\u2022 Poliklinik Urologi\n\u2022 Poliklinik Gigi\n\u2022 Hemodialisa\n\u2022 Fisioterapi\n\u2022 Medical Check Up (MCU)"
+                android:paddingBottom="60dp"/>
 
         </LinearLayout>
     </ScrollView>

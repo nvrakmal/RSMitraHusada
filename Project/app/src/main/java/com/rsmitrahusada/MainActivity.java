@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.view_pager);
         sliderAdapter = new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         startSliderAutoSwipe();
     }
 

@@ -1,0 +1,54 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#161616"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/namatext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Dokter"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/spesialistext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spesialis Dokter"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/jadwaltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Dokter"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

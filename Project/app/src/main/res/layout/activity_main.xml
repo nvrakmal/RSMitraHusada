@@ -75,7 +75,7 @@
                     android:layout_width="160dp"
                     android:layout_height="140dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardBackgroundColor="#04A1DC"
+                    app:cardBackgroundColor="#00AEF0"
                     app:cardCornerRadius="10dp"
                     android:onClick="Layanan"
                     android:layout_margin="5dp">
@@ -89,7 +89,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/ambulance" />
+                            android:src="@drawable/ic_ambulance" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/doctor" />
+                            android:src="@drawable/ic_doctor" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -166,7 +166,7 @@
                         <ImageView
                             android:layout_width="55dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/building" />
+                            android:src="@drawable/ic_building" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                     android:layout_width="160dp"
                     android:layout_height="140dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardBackgroundColor="#04A1DC"
+                    app:cardBackgroundColor="#00AEF0"
                     app:cardCornerRadius="10dp"
                     android:onClick="Lokasi"
                     android:layout_margin="5dp">
@@ -230,7 +230,7 @@
                     android:layout_width="160dp"
                     android:layout_height="140dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardBackgroundColor="#04A1DC"
+                    app:cardBackgroundColor="#00AEF0"
                     app:cardCornerRadius="10dp"
                     android:onClick="Pendaftaran"
                     android:layout_margin="5dp">
@@ -276,9 +276,9 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="40dp"
+                            android:layout_width="60dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/doctor" />
+                            android:src="@drawable/ic_tentangkami" />
 
                         <TextView
                             android:layout_width="match_parent"
